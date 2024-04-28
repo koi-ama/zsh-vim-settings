@@ -1,25 +1,3 @@
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/amakasukiichirou/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/amakasukiichirou/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/amakasukiichirou/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/amakasukiichirou/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-export PS1="\$>"
-
 alias norm='norminette'
 alias normrc='norminette -R CheckForbiddenSourceHeader'
 alias ccw='cc -Wall -Wextra -Werror'
@@ -35,7 +13,7 @@ export PATH=$PATH:$HOME/dotnet
 export PATH="$HOME/.cargo/bin:$PATH"
 source "$HOME/.cargo/env"
 
-# lsコマンド時、自動で色がつく(ls -Gのようなもの？)
+# lsコマンド時、自動で色がつく
 export CLICOLOR=true
 export LSCOLORS=GxGxBxDxCxEgEdxbxgxcxd
 
