@@ -39,6 +39,3 @@ inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
 inoremap return return<SPACE>();<LEFT><LEFT>
 
-"#####42ヘッダー#####
-let g:user42 = 'kamakasu'
-let g:mail42 = 'kamakasu@student.42.jp'
